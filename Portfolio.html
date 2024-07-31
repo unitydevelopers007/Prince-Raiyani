@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Raiyani - Unity Game Developer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: slideInDown 1s ease-out;
+        }
+        @keyframes slideInDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #2c2c2c;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h2 {
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .skills {
+            margin-bottom: 10px;
+        }
+        .skills ul, .projects ul, .learning-projects ul, .experience ul, .education ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills li, .projects li, .learning-projects li, .experience li, .education li {
+            background-color: #3a3a3a;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            animation: zoomIn 0.5s ease;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.9); }
+            to { transform: scale(1); }
+        }
+        .skills li:hover, .projects li:hover, .learning-projects li:hover, .experience li:hover, .education li:hover {
+            background-color: #505050;
+            transform: scale(1.05);
+        }
+        .contact p, .contact a {
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #222;
+            color: #aaa;
+        }
+        .section {
+            text-align: center;
+        }
+        .section ul {
+            display: inline-block;
+            text-align: left;
+        }
+        .two-columns, .experience-columns {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .two-columns > div, .experience-columns > div {
+            flex: 1;
+            margin: 0;
+        }
+        .experience-columns {
+            flex-direction: column;
+        }
+        .learning-projects a {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px 0;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .learning-projects a:hover {
+            background-color: #e6b800;
+            color: #fff;
+        }
+        @media (min-width: 600px) {
+            .two-columns {
+                flex-direction: row;
+            }
+            .experience-columns {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Prince Raiyani - Unity Game Developer</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm Prince Raiyani, a passionate Unity game developer with expertise in C#. I love creating immersive and engaging games. With a strong foundation in game design and development, I aim to bring unique and fun experiences to players. I am constantly learning new skills and staying up-to-date with the latest trends in the gaming industry to enhance my professional growth.</p>
+        </div>
+        <div class="section contact">
+            <h2>Contact Information</h2>
+            <p>Phone: 9081983104</p>
+            <p>Email: <a href="mailto:princeraiyani70@gmail.com">princeraiyani70@gmail.com</a></p>
+            <p>Address: Narayan Nagar, Puanagm, Surat</p>
+            <p>LinkedIn: <a href="https://in.linkedin.com/in/prince-raiyani-9520b8263">Prince Raiyani</a></p>
+        </div>
+        <div class="section skills">
+            <h2>Skills</h2>
+            <div class="two-columns">
+                <div>
+                    <ul>
+                        <li>C Language</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Unity 2D & 3D</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Error Solving</li>
+                        <li>Project Management</li>
+                        <li>Programming</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section learning-projects">
+            <h2>Learning Projects</h2>
+            <div class="two-columns">
+                <div>
+                    <ul>
+                        <li>Kitchen Chaos <a href="http://yourprojectlink.com">View Project</a></li>
+                        <li>FPS-Zombie <a href="http://yourprojectlink.com">View Project</a></li>
+                        <li>Brain Quiz <a href="http://yourprojectlink.com">View Project</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Math Quiz <a href="http://yourprojectlink.com">View Project</a></li>
+                        <li>Hill Climb <a href="http://yourprojectlink.com">View Project</a></li>
+                        <li>Steering Wheel Controller <a href="http://yourprojectlink.com">View Project</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section experience">
+            <h2>Experience</h2>
+            <h3>Velocity Technosoft</h3>
+            <p><strong>Role:</strong> Unity Game Developer</p>
+            <p><strong>Duration:</strong> 2023 - Present</p>
+            <div class="experience-columns">
+                <div>
+                    <ul>
+                        <li>Unity C# Basics</li>
+                        <li>Create a Simple 2D Game</li>
+                        <li>Native Gallery, Share, Camera, File</li>
+                        <li>Device Simulator</li>
+                        <li>Addressables</li>
+                        <li>Work on Client Base</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Unity UI</li>
+                        <li>Timeline, NavMesh, etc.</li>
+                        <li>Data Communication</li>
+                        <li>API Integration</li>
+                        <li>Localization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section projects">
+            <h2>Projects</h2>
+            <div class="two-columns">
+                <div>
+                    <ul>
+                        <li>
+                            <strong>2048 (Demo):</strong> <a href="http://yourprojectlink.com">Link</a>
+                            <p>A description of your project goes here. Highlight the technologies used and your role in the project.</p>
+                        </li>
+                        <li>
+                            <strong>Brick Breaker Quest (Demo):</strong> <a href="http://yourprojectlink.com">Link</a>
+                            <p>A description of your project goes here. Highlight the technologies used and your role in the project.</p>
+                        </li>
+                        <li>
+                            <strong>Ball Short:</strong> <a href="http://yourprojectlink.com">Link</a>
+                            <p>A description of your project goes here. Highlight the technologies used and your role in the project.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <strong>Catch The Rat:</strong> <a href="http://yourprojectlink.com">Link</a>
+                            <p>A description of your project goes here. Highlight the technologies used and your role in the project.</p>
+                        </li>
+                        <li>
+                            <strong>Surface Jump:</strong> <a href="http://yourprojectlink.com">Link</a>
+                            <p>A description of your project goes here. Highlight the technologies used and your role in the project.</p>
+                        </li>
+                        <li>
+                            <strong>Save The Dog:</strong> <a href="http://yourprojectlink.com">Link</a>
+                            <p>A description of your project goes here. Highlight the technologies used and your role in the project.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Prince Raiyani - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
